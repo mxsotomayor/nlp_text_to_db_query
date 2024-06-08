@@ -1,6 +1,6 @@
 {
   "name": "@zyporai/nlp_text_to_db_query",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,17 @@
     "type": "git",
     "url": "git@github.com:mxsotomayor/nlp_text_to_db_query.git"
   },
-  "keywords": [],
+  "keywords": [
+    "llm",
+    "ai",   
+    "prompt engineering",
+    "chatgpt",
+    "machine learning",
+    "ml",
+    "openai",
+    "open search",
+    "text to open search query"
+  ],
   "author": "Maxwell Sotomayor Ramos",
   "license": "ISC",
   "dependencies": {
