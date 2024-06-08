@@ -1,0 +1,25 @@
+{
+    "queryFormat":"opensearch",
+    "schema": [
+        {
+            "name":"firstname",
+            "is":"is a string that store the name of a person."
+        },
+        {
+            "name":"birthday",
+            "is":"is a date attribute the store the birthday of a person."
+        },
+        {
+            "name":"gender",
+            "is":"describe the gender of the student, this field could be 'F' or 'M' only, 'F' for feminine and 'M' for masculine."
+        },
+        {
+            "name":"score",
+            "is":"is a number that store the amount of point gathered in maths by this student, the number of points  define the level of intelligence of each person, while higher the score, more important or smart is the student. smartest student have more that 60 score points"
+        },
+        {
+            "name":"country",
+            "is":"this field stores the code of country of residence of this person, this code is formatted as alpha-2 code. example United States is US, Cuba is CU"
+        }
+    ]
+}

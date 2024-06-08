@@ -1,0 +1,27 @@
+{
+  "name": "@zyporai/nlp_text_to_db_query",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js $OPENAI_KEY "
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Maxwell Sotomayor Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/openai": "^0.1.1",
+    "langchain": "^0.2.5"
+  },
+  "exports": {
+    ".": { 
+      "import": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/",
+    "./index.js"
+  ]
+}
