@@ -7,6 +7,13 @@
     "test": "node test.js $OPENAI_KEY "
   },
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mxsotomayor/nlp_text_to_db_query.git"
+  },
   "keywords": [],
   "author": "Maxwell Sotomayor Ramos",
   "license": "ISC",
