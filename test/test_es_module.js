@@ -1,4 +1,4 @@
-import { getOpenSearchQuery, parseExplainFile } from "./dist/index.js";
+import { getOpenSearchQuery, parseExplainFile } from "../dist/index.js";
 
 const run = async () => {
   // explain the database explain file only once

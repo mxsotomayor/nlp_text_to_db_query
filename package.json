@@ -1,10 +1,11 @@
 {
   "name": "@zyporai/nlp_text_to_db_query",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js $OPENAI_KEY "
+    "test_es": "node ./test/test_es_module.js $OPENAI_KEY ",
+    "test_co": "node ./test/test_common.cjs $OPENAI_KEY "
   },
   "type": "module",
   "publishConfig": {
@@ -23,7 +24,8 @@
   },
   "exports": {
     ".": { 
-      "import": "./index.js"
+      "import": "./index.js",
+       "require": "./index.cjs"
     },
     "./package.json": "./package.json"
   },
