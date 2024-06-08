@@ -1,6 +1,6 @@
 {
   "name": "@zyporai/nlp_text_to_db_query",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -31,6 +31,7 @@
   },
   "files": [
     "dist/",
-    "./index.js"
+    "./index.js",
+    "./index.cjs"
   ]
 }
