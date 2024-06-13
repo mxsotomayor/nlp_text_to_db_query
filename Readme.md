@@ -2,9 +2,9 @@
 
 ## What is this?
 
-This package will allow you to build ready-to-use queries for execute in your Open Search databases. Also you'll able to execute them and get accurate results.
+This package will allow you to build ready-to-use queries for execute in your Open Search database using Structured generation.
 
-**This project use OpenAI for build your queries, that's why you MUST sign up and have and OpenAI Key.**
+**This project use OpenAI for build your queries, that's why you MUST sign up and have and [OpenAI Key](https://platform.openai.com/docs/quickstart).**
 
 ## Installing
 
@@ -22,14 +22,20 @@ yarn add @zyporai/nlp_text_to_db_query
 
 ## How to use
 
+## Requirement
+
+Make sure that ```OPENAI_API_KEY``` environment variable is properly set and accessible.
+
 ### The explanation file
 
-The ```explanationFile.json``` must be accesible in the project root
+The ```explanationFile.json``` must be accessible in the project root.
 
 ```text
 ...
+...
  - explainFile.json
  - package.json
+...
 ...
 ```
 
@@ -117,7 +123,6 @@ router.get("/", async (req, res) => {
 });
 
 ```
-
 
 ## How to test
 

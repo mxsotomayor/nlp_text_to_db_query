@@ -1,8 +1,22 @@
-const { OpenAI } = require("@langchain/openai");
+import { OpenAI } from "@langchain/openai";
 
-const getOpenSearchQuery = async (question = "") => {
+export const getOpenSearchQuery = async (question = "") => {
   try {
     const LLMPrompt = process.env.__LLM_PROMPT.replace("{question}", question);
+
+    if (!process.env.__LLM_PROMPT) {
+      console.log(
+        "Error building query, make sure that you initialized the prompt"
+      );
+      return;
+    }
+
+    if (!process.env.OPENAI_API_KEY) {
+      console.log(
+        "Error building query, OpenAI environment variable not found."
+      );
+      return;
+    }
 
     const model = new OpenAI({
       openAIApiKey: process.env.OPENAI_API_KEY,
@@ -22,5 +36,3 @@ const getOpenSearchQuery = async (question = "") => {
     return false;
   }
 };
-
-module.exports.getOpenSearchQuery = getOpenSearchQuery;

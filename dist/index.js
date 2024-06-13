@@ -1,3 +1,3 @@
-export * from './getOpenSearchQuery.js'
+export * from './builders/getOpenSearchQuery.js'
 export * from './preparePrompt.js'
 
